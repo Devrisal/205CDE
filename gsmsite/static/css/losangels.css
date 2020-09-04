@@ -1,0 +1,647 @@
+
+ ul{
+    margin: 0;
+    padding: 0;
+	
+}
+
+header {
+    background-color:black;
+    height: 150px;
+	
+}
+
+header h1{
+    color: white;
+    line-height: 200px;
+	float: center-right;
+}
+
+header img{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 30px;
+}
+
+
+/* nav{
+    background-image:url('rib_3d.png');
+	height:100px;
+	width:100%;
+	background-repeat:no-repeat;
+    background-color:purple;
+	position:relative;
+	background-size:100% 100%;
+    
+   
+}
+
+nav ul{
+    list-style: none; 
+    margin-left:70px;	
+}
+
+nav ul li{
+    padding: 5px 5px;
+    float: left;
+    margin-left: 55px;
+    
+}
+
+nav ul li a{
+    
+    padding: 20px 20px;
+    
+    display: block;
+    text-decoration: none;
+    font-family: sans-serif;
+    color:#ecf0f1;
+    font-weight:500;
+    
+}
+.nav ul li a:active{
+    background-color:yellow;
+}
+
+
+nav ul li a:hover{
+        
+    background-color: red;
+    border-radius: 4px;
+ 
+}
+
+.drop{
+    position: absolute;
+    background-color: green;
+    display: none;
+}
+.listdown:hover .drop{
+    display: block;
+}
+.drop .one{
+    float: left;
+}
+.listdown:hover{
+	background-color:blue;
+}
+ */
+
+/* nav:after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+/*--Footer-*/
+
+
+footer{
+    width: 100%;
+    clear: both;
+    background-color: #d9dce0;
+}
+
+.subscribe{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+    border-bottom: 2px solid blue; 
+    border-top: 2px solid blue; 
+}
+
+.subscribe h3{
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #6a1616;
+}
+.subscribe form{
+   margin-left: 33.5%;  
+}
+
+.subscribe input{
+    width: 300px;
+    outline: none;
+    border: 1px solid blue;
+    padding: 1.5%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.subscribe input[type="submit"]{
+   width: 100px;
+    background-color: blue;
+    color: white;
+}
+
+.subscribe input[type="submit"]:hover{
+    background-color: #0c0cb4;
+}
+
+.contact, .connect, .quicklinks{
+    width: 33.3%;
+    padding: 20px 0;
+    height: 200px;
+    float: left;
+    border-bottom: 2px solid blue;
+    background-color: #d9dce0;
+}
+
+
+.contact h2, .connect h2, .quicklinks h2{
+    text-align: center;
+}
+.contact {
+    text-align: center;
+    
+}
+ .quicklinks{
+    text-align: justify;
+}
+
+.connect{
+    
+    text-align: center;
+}
+
+.connect img{
+    height: 50px;
+    width: 50px;
+}
+
+.quicklinks ul{
+    list-style: none;
+}
+
+.quicklinks ul li{
+    text-align: center;
+    line-height: 25px;
+}
+.quicklinks ul li a{
+    text-decoration:  none;
+    color: black;
+}
+.quicklinks ul li:hover a{
+    color: blue;
+    font-weight: bold;
+}
+
+
+/*---home--*/
+.cover{
+    width: 100%;
+}
+
+.cover img{
+    width: 100%;
+    height: 500px;
+    border: 4px solid green;
+    box-sizing: border-box;
+}
+
+.cover:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.communitygroupwrap{
+    width:70%;
+    margin: 20px auto;
+}
+
+.communitygroup{
+    width: 100%;
+}
+.communitygroupwrap h1{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
+.communitygroup img{
+    width:200px;
+    height:200px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.communitygroup p{
+    line-height: 28px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.communitygroup p b{
+    color: brown;
+    text-decoration: underline;
+}
+
+.communitygroup:after{
+    content:'';
+    display: block;
+    clear: both;
+    
+}
+
+/*--aboutus--*/
+.aboutus{
+    width: 90%;
+    margin: 2% 5%;
+    clear: both;
+}
+
+.aboutus h1{
+    text-align: center;
+    margin: 20px 0;
+    color: blue;
+    font-size: 30px;
+}
+.groupinfo{
+    width: 100%;
+    clear: both;
+}
+
+.aboutus .groupinfo .singlegroup{
+    width: 25%;
+    margin: 1% 2.5%;
+    float: right;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+.groupinfo .singlegroup h4{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+}
+
+.groupinfo .singlegroup p{
+    text-align: justify;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.groupinfo .singlegroup img{
+    width: 100%;
+}
+
+.members{
+    width: 100%;
+    
+}
+
+.members h2{
+    text-align: center;
+    margin: 20px 0;
+    color: blue;
+    font-size: 10px;
+}
+
+.members .singlemember{
+    
+    margin:  50px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: auto;
+    border: 2px solid blue;
+    float: right;
+}
+
+.singlemember img{
+    width: 100%;
+}
+
+.singlemember p{
+    text-align: center;
+     height: auto;
+     border: 2px solid blue;
+    font-size: 20px;
+}
+
+.singlemember p b{
+    color: brown;
+}
+
+/*--advice--*/
+.advice{
+    width: 90%;
+    margin: 20px 5%;
+}
+.advice h1{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 20px 0;
+    clear: both;
+    color: blue;
+    font-size: 30px;
+    
+}
+
+.advice .singleadvice{
+    width:50%;
+    margin: 2.5%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid blue;
+    float: left;
+}
+
+
+.advice .singleadvice1{
+    width:50%;
+    margin: 2.5%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid blue;
+    float: left;
+}
+.advice .singleadvice2{
+    text-align: center;
+    color: brown;
+}
+.advice .singleadvice3{
+    text-align:center;
+    line-height: 27px;
+    font-size: 19px;
+}
+.advice .singlegroup{
+    text-align: justify;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+/*--Fitness Class--*/
+
+.fitnessclass{
+    width: 90%;
+    margin: 20px 5%;
+}
+
+.fitnessclass h2{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+.fitnessclass .gallery{
+    widows: 100%;
+}
+.gallery img{
+    width: 23%;
+    margin: 1%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid blue;
+    float: left;
+	height: 250px;
+}
+
+.gallery:after{
+    content:'';
+    display: block;
+    clear: both;
+    
+}
+
+.fitness{
+    width: 70%;
+    margin: 20px auto;
+    clear: both;
+}
+.fitness h1{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    clear: both;
+}
+.fitness .singlefitness{
+    width: 100%;
+}
+
+.fitness .singlefitness img{
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    float: left;
+}
+
+.fitness .singlefitness p{
+    text-align: justify;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+.fitness .singlefitness p b{
+    color: brown;
+}
+
+
+/*--Get Involved--*/
+.getinvolved h1{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    margin: 20px 0;
+    width: 100%;
+    float: left;
+}
+
+.getinvolved p{
+    text-align: center;
+    font-size: 19px;
+    line-height: 27px;
+}
+.getinvolved form{
+    width: 40%;
+    margin: 20px auto;
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+.getinvolved form label{
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.getinvolved form input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.getinvolved form select{
+     width: 100%;
+    padding: 10px;
+}
+
+.getinvolved form input[type = "submit"]{
+     margin:15px 0;
+    width: 100%;
+    color: white;
+    background-color: green;
+    padding: 15px 0;
+}
+
+/*--healthylife--*/
+
+.healthylife {
+    width: 90%;
+    margin: 20px 5%;
+    float: left;
+}
+
+.healthylife img{
+    width: 100%;
+    height: 500px;
+}
+.healthylife h1{
+    text-align: center;
+    margin: 20px 0;
+    color: blue;
+    font-size: 30px;
+}
+.healthylife ul{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.healthylife ul li{
+    text-align: justify;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+
+/*--visitorinfo--*/
+
+.visitorinfo{
+    width: 90%;
+    margin: 20px 5%;
+    float: left;
+}
+
+.visitorinfo h1{
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+}
+
+.visitorinfo .singleinfo{
+    width:45%;
+    margin: 20px 2.5%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 2px solid blue;
+    float: left;
+}
+
+.visitorinfo .singleinfo img{
+    width: 100%;
+    height: 400px;
+}
+
+.visitorinfo .singleinfo p{
+    text-align: center;
+    font-size: 19px;
+    
+}
+
+.visitorinfo .singleinfo p b{
+    color: brown;
+}
+
+
+/*--Community--*/
+
+.community{
+    width: 100%;
+    float: left;
+}
+
+.community .login{
+    width: 50%;
+    margin: 20px auto;
+}
+.community .login h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: blue;
+}
+
+
+.community .login form{
+    width: 100%;
+}
+
+.community .login form input{
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    text-align: center;
+}
+
+.community .login form input[type = "submit"]{
+    width: 104%;
+    color: white;
+    background-color: green;
+}
+
+.community .memberdiscuss{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.memberdiscuss p {
+    line-height: 27px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.memberdiscuss h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+    color: green;
+}
+.memberdiscuss label{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 25px;
+    color: blue;
+}
+
+.memberdiscuss input{
+    width: 70%;
+    margin: 5px 15%;
+    padding: 10px;
+    
+}
+
+.memberdiscuss input[type = "submit"]{
+    width:73.5%;
+    color: white;
+    background-color: blue;
+    margin-bottom: 30px;
+    
+}
+.WebContainer{
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color:black;
+    height: 150px;
+	width: auto;
+	
+}

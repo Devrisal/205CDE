@@ -1,0 +1,99 @@
+{% include "layouts/dashboard.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <style>
+      	body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #7abecc !important;
+		}
+    </style>
+    <title>Add event</title>
+  </head>
+  <body>
+      
+    <div class="container-fluid form-group col-md-8">
+        <form  method="POST">
+          {% csrf_token %}
+          
+            <h1 class="d-flex justify-content-center">Add Event For GYM HAll</h1>
+           
+            <div class="form-group row">
+                <label for="event" class="col-sm-2 col-form-label col-form-label-sm">Event Name</label>
+                <div class="col-sm-10">
+                  <input type="text" name="event_name" class="form-control form-control-sm" id="eventname" placeholder="Event Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="location" class="col-sm-2 col-form-label col-form-label-sm">Location</label>
+                <div class="col-sm-10">
+                  <input type="text" name="location" class="form-control form-control-sm" id="location" placeholder="Location">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="des" class="col-sm-2 col-form-label col-form-label-sm">Description</label>
+                <div class="col-sm-10">
+                  <input type="des" name="description" class="form-control form-control-sm" id="lastname" placeholder="About event"required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="event date" class="col-sm-2 col-form-label col-form-label-sm">Event Date</label>
+                <div class="col-sm-10">
+                  <input type="date" name="eventdate" class="form-control form-control-sm" id="eventdate">
+                </div>
+              <!-- <div class="form-group row col-sm-12">
+              <div class="custom-file">
+                <input type="file" name="event_image" class="custom-file-input form-control form-control-sm" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label> 
+              </div> -->
+            </div>
+
+                  <button  type="submit" name="submit" value="Submit" class="btn btn-primary form-control form-control-sm-10 mt-10">Add Event</button>       
+          </form> 
+          {{forms.errors}}     
+    </div>
+    <hr/>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Event Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Description</th>
+            <th scope="col">Date</th>
+           
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+           {% for event in allevents %}
+          <tr>
+            <th scope="row">{{event.id}}</th>
+            <td>{{ event.event_name}}</td>
+            <td>{{event.location}}</td>
+            <td>{{event.description}}</td>
+            <td>{{ event.event_date}}</td>
+           
+            <td><a type="button" class="btn btn-warning" href="">Update</a></td>
+            <td><a type="button" class="btn btn-danger" href="delete/{{event.id}}" >Delete</a></td>
+          </tr>
+          {% endfor %}
+          
+        </tbody>
+      </table>
+      
+    </body>
+</html>

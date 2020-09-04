@@ -1,0 +1,53 @@
+
+{% include "layouts/navbar.html" %}
+{% load static %}
+<head>
+    <title> Los Angele's fitness class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/losangels.css' %}">
+    </head>
+<section class="aboutus">
+    <div class="members">
+    <h2>Our Happy Members</h2>
+    <div class="singlemember">
+        <img src="{% static 'images/dev.jpg' %}" alt="Our group member">
+        <p><b>Name: </b>RISAL DEV</p>
+        <p><b>Group Involved: </b>14th jan, 2011</p>
+        <p><b>Occupation: </b>Our Construction Project Manager</p>
+    </div>
+    
+    
+    <div class="singlemember">
+        <img src="{% static 'images/manish1.png' %}" alt="Our group member">
+        <p><b>Name: </b>MANISH</p>
+        <p><b>Group Involved: </b>2th dec, 2015</p>
+        <p><b>Occupation: </b>Project Builder</p>
+    </div>
+    
+    <div class="singlemember">
+        <img src="{% static 'images/laxman.png' %}" alt="Our group member">
+        <p><b>Name: </b>LX BHANDARI</p>
+        <p><b>Group Involved: </b>20th mrch, 2016</p>
+        <p><b>Occupation: </b>Engineering Manager</p>
+    </div>
+    
+    
+    
+    <div class="singlemember">
+        <img src="{% static 'images/member2.jpg' %}" alt="Our group member">
+        <p><b>Name: </b>DHULAB</p>
+        <p><b>Group Involved: </b>19th nov, 2017</p>
+        <p><b>Occupation: </b>Production Manager</p>
+    </div>
+    
+    <div class="singlemember">
+        <img src="{% static 'images/bina.png' %}" alt="Our group member">
+        <p><b>Name: </b>BINA</p>
+        <p><b>Group Involved: </b>1oth dec, 2018</p>
+        <p><b>Occupation: </b>jumba manager</p>
+    </div>
+    
+    
+    </div>
+    </section>
+    {% include "layouts/footer.html" %}

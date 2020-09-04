@@ -1,0 +1,48 @@
+
+{% include "layouts/navbar.html" %}
+{% load static %}
+<head>
+    <title> Los Angele's hottest fitness class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/losangels.css' %}">
+    </head>
+<section class="aboutus">
+    <div class="members">
+    <h2>Our Packages</h2>
+    <div class="singlemember">
+        <img src="{% static 'images/pack1.png' %}" alt="Our group member">
+        <p><b>Packages Name: </b>Basics</p>
+        <p><b>Description: </b>simple basics</p>
+        <p><b>Duration: </b>3 months</p>
+        <p><b>Price: </b>Rs: 2500</p>
+        <a type="button" class="btn btn-success" href="#">Book</a>
+    </div>
+    
+    
+    <div class="singlemember">
+        <img src="{% static 'images/pack2.png' %}" alt="Our group member">
+        <p><b>Packages Name: </b>Body Building</p>
+        <p><b>Description: </b>Muscles building</p>
+        <p><b>Duration: </b>2 months</p>
+        <p><b>Price: </b>Rs: 2500</p>
+        <a type="button" class="btn btn-success" href="#">Book</a>
+    </div>
+    
+    <div class="singlemember">
+        <img src="{% static 'images/pack3.png' %}" alt="Our group member">
+        <p><b>Packages Name: </b>Basics</p>
+        <p><b>Description: </b>simple basics</p>
+        <p><b>Duration: </b>4 months</p>
+        <p><b>Price: </b>Rs: 2500</p>
+        <a type="button" class="btn btn-success" href="#">Book</a>
+    </div>
+
+
+    
+    
+    
+   
+    
+    </div>
+    </section>
+    {% include "layouts/footer.html" %}

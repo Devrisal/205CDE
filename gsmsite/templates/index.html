@@ -1,0 +1,45 @@
+
+{% include "layouts/navbar.html" %}
+{% load static %}
+<head>
+    <title> Los Angele's fitness class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/losangels.css' %}">
+    </head>
+<section>
+    <div class="cover">
+        <img src="{% static 'images/home.png' %}" alt="Club member lifting weight.">
+    </div>
+    
+    <div class="communitygroupwrap">
+        <h1>Our Community Group</h1>
+        
+        <div class="communitygroup">
+        <img src="{% static 'images/fitnessgroup.jpg' %}" alt="Our fitness class member">
+        <p><b>Fitness Group</b> <br />
+Physical fitness is generally achieved through exercise. Photo shows Rich Froning Jr. – four-time winner of "Fittest Man on Earth" title.
+Physical fitness is a state of health and well-being and, more specifically, the ability to perform aspects of sports, occupations and daily activities. Physical fitness is generally achieved through proper nutrition, moderate-vigorous physical exercise, and sufficient rest.</p>
+        </div>
+        <hr />
+        <div class="communitygroup">
+        <img src="{% static 'images/football.jpg' %}" alt="Our sports group member">
+        <p><b>Football group</b> <br />Advantage is essentially letting play continue after a foul for which play would be stopped for a free kick but the team which was fouled is in a better position to score than if they had a free kick. It’s usually given when a team that has been fouled retains possession in the attacking third of the field. There are two signals for advantage, two arms held out parallel to the ground or one arm (new signal) held similarly. </p>
+        </div>
+        <hr />
+        <div class="communitygroup">
+        <img src="{% static 'images/socialgroup.jpg' %}" alt="Our social group member">
+        <p><b>social group</b> <br />social group is any set of human beings who either are, recently have been, or anticipate being in some kind of interrelation. The term group, or social group, has been used to designate many kinds of aggregations of humans. Aggregations of two members and aggregations that include the total population of a large nation-state have been called groups.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+{% include "layouts/footer.html" %}

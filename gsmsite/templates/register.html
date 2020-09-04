@@ -1,0 +1,94 @@
+
+{% include "layouts/navbar.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <style>
+      	body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #7abecc !important;
+		}
+    </style>
+    <title>Registration!</title>
+  </head>
+  
+  <body> 
+  
+
+
+    <div class="container-fluid form-group col-md-7">
+      
+        <form  method="POST">
+           {% csrf_token %}
+           <h1 class="d-flex justify-content-center">Registration Form</h1>
+           
+            <div class="form-group row">
+                <label for="first name" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-user">First Name</i></label>
+                <div class="col-sm-10">
+                  <input type="text" name="first_name" class="form-control form-control-sm" id="firstname" placeholder="First Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="LastName" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-user">LastName</i></label>
+                <div class="col-sm-10">
+                  <input type="text" name="last_name" class="form-control form-control-sm" id="lastname" placeholder="Last name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-envelope-square">Email</i></label>
+                <div class="col-sm-10">
+                  <input type="email" name="email" class="form-control form-control-sm" id="email" placeholder="Email@gmail.com">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="phone" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-phone">Phone</i></label>
+                <div class="col-sm-10">
+                  <input type="text" name="phone" class="form-control form-control-sm" id="phone" placeholder="Phone no">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="address" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-address-card">Address</i></label>
+                <div class="col-sm-10">
+                  <input type="text" name="address" class="form-control form-control-sm" id="address" placeholder="Address">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="username" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-user">Username</i></label>
+                <div class="col-sm-10">
+                  <input type="text" name="username" class="form-control form-control-sm" id="username" placeholder="Username">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="password" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-lock">Password</i><i class="fas fa-password"></i></label>
+                <div class="col-sm-10">
+                  <input type="password" name="password" class="form-control form-control-sm" id="password" placeholder="Password here">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="repassword" class="col-sm-2 col-form-label col-form-label-sm"><i class="fas fa-lock">Confirm </i></label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control form-control-sm" id="password" placeholder="Retype Password here">
+                </div>
+              </div>
+                  <button  type="submit" name="submit" value="Submit" class="btn btn-primary form-control form-control-sm-10 mt-10">Registration</button>       
+          </form> 
+          {{forms.errors}}     
+    </div>
+    <div class="mt-8">
+      <div class="d-flex justify-content-center links">
+        Already have an account? <a href="{% url 'login' %}" class="ml-2">Sign in</a>
+      </div>
+      {% include "layouts/footer.html" %}
+    </body>
+</html>

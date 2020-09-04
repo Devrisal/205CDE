@@ -1,0 +1,36 @@
+{% include "layouts/navbar.html" %}
+{% load static %}
+<head>
+    <title> Los Angele's hottest fitness class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/losangels.css' %}">
+    </head>
+
+  <div class="fitness">
+    <h1>fitness Classes That Are On Offer During The Week</h1>
+    <div class="singlefitness">
+        <img src="{% static 'images/cardio.jpg' %}" alt="Members doing cardio.">
+        <p><b>Cardio Class: </b><br /> 
+            Exercise is any exercise that raises your heart rate. Face it our bodies were made to move. And we all know that to keep our muscles in shape we need move them. This movement makes them stronger and stronger muscles make for a more efficient and healthy body. Your heart is a muscle. Therefore working it makes it stronger. A stronger cardio-vascular system means more capillaries delivering more oxygen to cells in your muscles. This enables your cells to burn more fat during both exercise and inactivity.
+        </p>
+    </div>
+    
+    <hr />            
+    <div class="singlefitness">
+        <img src="{% static 'images/gym.jpg' %}" alt="Members doing gym.">
+        <p><b>Gym Class: </b><br /> 
+                Regular exercise may lower your risk of developing diabetes, metabolic syndrome and some types of cancer, such as colon cancer and breast cancer. Combining aerobic exercise with strength training at the gym helps your muscles, ligaments, joints and tendons remain in good shape, which will make you stronger and more flexible. This is particularly important as you age or face problems such as arthritis. You may lower your risk of falling or fracturing your hip, which may negatively impact your life, especially in your older years.
+        </p>
+    </div>
+    
+    <hr />
+    <div class="singlefitness">
+        <img src="{% static 'images/yoga.jpg' %}" alt="Members doing yoga.">
+        <p><b>Yoga Class: </b><br /> 
+        Weight loss, a strong and flexible body, glowing beautiful skin, peaceful mind, good health – whatever you may be looking for, yoga has it on offer. However, very often, yoga is only partially understood as being limited to asanas (yoga poses). As such, its benefits are only perceived to be at the body level and we fail to realize the immense benefits yoga offers in uniting the body, mind and breath. When you are in harmony, the journey through life is calmer, happier and more fulfilling.
+        </p>
+    </div>
+</div>
+
+
+{% include "layouts/footer.html" %}

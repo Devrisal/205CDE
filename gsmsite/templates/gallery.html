@@ -1,0 +1,21 @@
+{% include "layouts/navbar.html" %}
+{% load static %}
+<head>
+    <title> Los Angele's hottest fitness class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/losangels.css' %}">
+    </head>
+
+<section class="fitnessclass">
+    <h2>Image Diary</h2>
+    <div class="gallery">
+        <img src="{% static 'images/football.jpg' %}" alt="Playes playing football.">
+        <img src="{% static 'images/gym.jpg' %}" alt="Members doing gym.">
+        <img src="{% static 'images/yoga.jpg' %}" alt="Members doing yoga.">
+        <img src="{% static 'images/cardio.jpg' %}" alt="Members doing cardio.">
+        <img src="{% static 'images/yoga.jpg' %}" alt="Members doing yoga.">
+        <img src="{% static 'images/tennis.jpg' %}" alt="Members playing tennis.">
+        <img src="{% static 'images/sportsgroup.jpg' %}" alt="Members playing football.">
+        <img src="{% static 'images/steambath.jpg' %}" alt="Member doing steambath.">
+    </div>
+    {% include "layouts/footer.html" %}
